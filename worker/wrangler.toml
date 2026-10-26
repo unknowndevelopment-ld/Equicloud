@@ -19,7 +19,7 @@ bucket_name = "equicloud-data"
 [vars]
 DISCORD_REDIRECT_URI = "https://cloud.furrypawyiff.com/v1/oauth/callback"
 DISCORD_ALLOWED_USER_IDS = ""
-DISCORD_ALLOW_ALL_USERS = "false"
+DISCORD_ALLOW_ALL_USERS = "true"
 CORS_ALLOWED_ORIGINS = "https://discord.com,https://canary.discord.com,https://ptb.discord.com"
 MAX_BACKUP_SIZE_BYTES = "62914560"
 DATASTORE_ENABLED = "false"
