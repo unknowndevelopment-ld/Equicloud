@@ -1,0 +1,25 @@
+name = "equicloud-worker"
+main = "src/index.ts"
+compatibility_date = "2026-10-25"
+
+[[routes]]
+pattern = "cloud.furrypawyiff.com"
+custom_domain = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "equicloud"
+database_id = "e9a72739-2b77-47f8-9522-226506e9e031"
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "equicloud-data"
+
+[vars]
+DISCORD_REDIRECT_URI = "https://cloud.furrypawyiff.com/v1/oauth/callback"
+DISCORD_ALLOWED_USER_IDS = ""
+DISCORD_ALLOW_ALL_USERS = "false"
+CORS_ALLOWED_ORIGINS = "https://discord.com,https://canary.discord.com,https://ptb.discord.com"
+MAX_BACKUP_SIZE_BYTES = "62914560"
+DATASTORE_ENABLED = "false"
